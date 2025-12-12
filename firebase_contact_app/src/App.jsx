@@ -10,9 +10,9 @@ const App = () => {
       <Navbar/> 
 
       <div className='flex gap-2'>
-        <div className='flex relative items-center  flex-grow '>
+        <div className='flex relative items-center grow '>
         <CiSearch className='text-white text-3xl absolute ml-1' />  
-        <input type="text" className='border-white text-white pl-8  border h-10 rounded-md flex-grow ' />
+        <input type="text" className='border-white text-white pl-8  border h-10 rounded-md grow ' />
       </div>
         <AiFillPlusCircle className='text-white text-5xl cursor-pointer'/>
       </div>
