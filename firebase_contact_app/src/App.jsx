@@ -7,21 +7,15 @@ import {db} from './config/firebase'
 import ContactCard from './components/ContactCard';
 import Modal from './components/Modal';
 import AddAndUpdateContact from './components/AddAndUpdateContact';
+import useDisclouse from './hoooks/useDisclouse';
 
 
 const App = () => {
 
   const [contacts,setcontacts]=useState([]);
 
-  const [isopen,setopen]=useState(false)
-
-  function onopen(){
-    setopen(true);
-  }
-
-  function onclose(){
-    setopen(false);
-  }
+  const {isopen,onclose,onopen}=useDisclouse()
+  
 
   useEffect(()=>{
 
